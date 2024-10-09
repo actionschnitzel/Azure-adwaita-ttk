@@ -56,6 +56,14 @@ If you need a highlighted button, use `Accent.TButton`:
 ```python
 accent_button = ttk.Button(root, text='Accent button', style='Accent.TButton', command=callback)
 ```
+If you need a red button, use `Red.TButton`:
+```python
+accent_button = ttk.Button(root, text='Accent button', style='Red.TButton', command=callback)
+```
+If you need a green button, use `Green.TButton`:
+```python
+accent_button = ttk.Button(root, text='Accent button', style='Green.TButton', command=callback)
+```
 
 To create a toggle button you need a checkbutton, to which you can apply the `Toggle.TButton` style:
 ```python
