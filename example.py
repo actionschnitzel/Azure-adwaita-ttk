@@ -146,17 +146,29 @@ class App(ttk.Frame):
         )
         self.accentbutton.grid(row=7, column=0, padx=5, pady=10, sticky="nsew")
 
+        # GreenAccentbutton
+        self.accentbutton = ttk.Button(
+            self.widgets_frame, text="Install button", style="Green.TButton"
+        )
+        self.accentbutton.grid(row=8, column=0, padx=5, pady=10, sticky="nsew")
+
+        # RedAccentbutton
+        self.accentbutton = ttk.Button(
+            self.widgets_frame, text="Uninstall button", style="Red.TButton"
+        )
+        self.accentbutton.grid(row=9, column=0, padx=5, pady=10, sticky="nsew")
+
         # Togglebutton
         self.togglebutton = ttk.Checkbutton(
             self.widgets_frame, text="Toggle button", style="Toggle.TButton"
         )
-        self.togglebutton.grid(row=8, column=0, padx=5, pady=10, sticky="nsew")
+        self.togglebutton.grid(row=10, column=0, padx=5, pady=10, sticky="nsew")
 
         # Switch
         self.switch = ttk.Checkbutton(
             self.widgets_frame, text="Switch", style="Switch.TCheckbutton"
         )
-        self.switch.grid(row=9, column=0, padx=5, pady=10, sticky="nsew")
+        self.switch.grid(row=11, column=0, padx=5, pady=10, sticky="nsew")
 
         # Panedwindow
         self.paned = ttk.PanedWindow(self)
