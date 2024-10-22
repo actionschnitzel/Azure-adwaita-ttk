@@ -1,4 +1,6 @@
-# Azure theme for ttk
+# Azure-adwaita theme for ttk
+### This fork aims to be closer to GTK and Adwaita.
+
 
 ![Screenshot of the Azure theme](screenshot.png)
 
