@@ -252,6 +252,15 @@ class App(ttk.Frame):
         self.notebook = ttk.Notebook(self.pane_2)
         self.notebook.pack(fill="both", expand=True)
 
+        global noteStyler
+        noteStyler = ttk.Style(self)
+        #noteStyler.theme_use('yaru')
+        noteStyler.configure(
+            "TNotebook",
+            borderwidth=0,
+            tabposition="w",
+            highlightthickness=0,
+        )
         # Tab #1
         self.tab_1 = ttk.Frame(self.notebook)
         for index in [0, 1]:
